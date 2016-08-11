@@ -1,0 +1,332 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SICK.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SICK.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SICK 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SICK 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SICK_DIALOG DIALOGEX 0, 0, 494, 411
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SICK"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "Port Name",IDC_STATIC,22,22,39,8
+    LTEXT           "Baud Rate",IDC_STATIC,27,41,34,8
+    LTEXT           "Data Bit",IDC_STATIC,35,60,26,8
+    LTEXT           "Parity Bit",IDC_STATIC,31,79,30,8
+    LTEXT           "Stop Bit",IDC_STATIC,35,98,26,8
+    COMBOBOX        IDC_COMBO1,64,20,48,81,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,64,58,48,69,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,64,96,48,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,64,39,48,79,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,64,77,48,63,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Connect",IDC_Connect,13,118,50,14
+    PUSHBUTTON      "Disconnect",IDC_Disconnect,67,117,50,14
+    PUSHBUTTON      "Send",IDC_SEND,265,115,50,14
+    EDITTEXT        IDC_EDIT1,133,115,125,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO6,221,23,81,56,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Changing the baudrate",IDC_STATIC,133,23,74,8
+    COMBOBOX        IDC_COMBO7,221,40,81,83,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Angular range n resolution",IDC_STATIC,133,40,86,8
+    COMBOBOX        IDC_COMBO8,221,59,81,39,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Measurment",IDC_STATIC,133,59,42,8
+    PUSHBUTTON      "Start Continuous Receive",IDC_SICK_START,133,79,98,30
+    PUSHBUTTON      "Stop",IDC_SICK_STOP,237,79,64,29
+    GROUPBOX        "Serial Communication Setting",IDC_STATIC,7,7,115,130
+    GROUPBOX        "Sick LMS 2X Communication Setting",IDC_STATIC,125,7,212,
+                    128
+    PUSHBUTTON      "Set",IDC_SetSend,307,23,25,13
+    PUSHBUTTON      "Set",IDC_SetSend2,307,40,25,13
+    PUSHBUTTON      "Set",IDC_SetSend3,307,59,25,13
+    EDITTEXT        IDC_EDIT2,339,7,148,127,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,207,
+                    59,10,8
+    CONTROL         "",IDC_PIC,"Static",SS_WHITERECT,7,150,480,254
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SICK MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SICK\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SICK.EXE\0"
+            VALUE "ProductName", "SICK 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SICK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 487
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 404
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SICK_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO2, 0x403, 6, 0
+0x2035, 0x6962, 0x0074, 
+    IDC_COMBO2, 0x403, 6, 0
+0x2036, 0x6962, 0x0074, 
+    IDC_COMBO2, 0x403, 6, 0
+0x2037, 0x6962, 0x0074, 
+    IDC_COMBO2, 0x403, 6, 0
+0x2038, 0x6962, 0x0074, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO4, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBO4, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO4, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO4, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_COMBO4, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO4, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO4, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO4, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0x7665, 0x6e65, "\000" 
+    IDC_COMBO5, 0x403, 4, 0
+0x646f, 0x0064, 
+    IDC_COMBO5, 0x403, 5, 0
+0x6f6e, 0x656e, "\000" 
+    IDC_COMBO6, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO6, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO6, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO7, 0x403, 8, 0
+0x7e30, 0x3031, 0x2030, 0x0031, 
+    IDC_COMBO7, 0x403, 10, 0
+0x7e30, 0x3031, 0x2030, 0x2e30, 0x0035, 
+    IDC_COMBO7, 0x403, 11, 0
+0x7e30, 0x3031, 0x2030, 0x2e30, 0x3532, "\000" 
+    IDC_COMBO7, 0x403, 8, 0
+0x7e30, 0x3831, 0x2030, 0x0031, 
+    IDC_COMBO7, 0x403, 10, 0
+0x7e30, 0x3831, 0x2030, 0x2e30, 0x0035, 
+    IDC_COMBO8, 0x403, 18, 0
+0x7753, 0x7469, 0x6863, 0x7420, 0x206f, 0x6d6d, 0x6d20, 0x646f, 0x0065, 
+
+    IDC_COMBO8, 0x403, 18, 0
+0x7753, 0x7469, 0x6863, 0x7420, 0x206f, 0x6d63, 0x6d20, 0x646f, 0x0065, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "SICK 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\SICK.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

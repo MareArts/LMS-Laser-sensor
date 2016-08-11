@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SICK - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/SICK.res" /d "_DEBUG" /d "_AFXDLL" "D:\프로그램\CLASS\SICK\SICK.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SICK.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\프로그램\CLASS\SICK\SICKDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SICK.pdb" /debug /machine:I386 /out:"Debug/SICK.exe" /pdbtype:sept 
+".\Debug\CommThread.obj"
+".\Debug\SenSor_SICK.obj"
+".\Debug\SICK.obj"
+".\Debug\SICKDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SICK.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+SICKDlg.cpp
+D:\프로그램\CLASS\SICK\SICKDlg.cpp(230) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\프로그램\CLASS\SICK\SICKDlg.cpp(231) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/SICK.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\CommThread.sbr" ".\Debug\SenSor_SICK.sbr" ".\Debug\SICK.sbr" ".\Debug\SICKDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SICK.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
